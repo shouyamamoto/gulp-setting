@@ -44,3 +44,19 @@ $ npm install
 $ gulp keiryoWatch
 ```
 コンパイルされるとdist/cssの中にコンパイルされたcssファイルがあります。
+
+## cssTaskのみエラーが出現する。そのほかのタスクはエラーなし。
+エラー内容
+```
+TypeError: Cannot read property 'toString' of null
+    at transform (/Users/yamamotosyo/Desktop/gulp-setting/node_modules/gulp-sass-glob/dist/index.js:67:32)
+    at DestroyableTransform._transform (/Users/yamamotosyo/Desktop/gulp-setting/node_modules/gulp-sass-glob/dist/index.js:49:15)
+    at DestroyableTransform.Transform._read (/Users/yamamotosyo/Desktop/gulp-setting/node_modules/readable-stream/lib/_stream_transform.js:184:10)
+    at DestroyableTransform.Transform._write (/Users/yamamotosyo/Desktop/gulp-setting/node_modules/readable-stream/lib/_stream_transform.js:172:83)
+    at doWrite (/Users/yamamotosyo/Desktop/gulp-setting/node_modules/readable-stream/lib/_stream_writable.js:428:64)
+    at writeOrBuffer (/Users/yamamotosyo/Desktop/gulp-setting/node_modules/readable-stream/lib/_stream_writable.js:417:5)
+    at DestroyableTransform.Writable.write (/Users/yamamotosyo/Desktop/gulp-setting/node_modules/readable-stream/lib/_stream_writable.js:334:11)
+    at DestroyableTransform.ondata (/Users/yamamotosyo/Desktop/gulp-setting/node_modules/readable-stream/lib/_stream_readable.js:619:20)
+    at DestroyableTransform.emit (events.js:314:20)
+    at DestroyableTransform.EventEmitter.emit (domain.js:506:15)
+```
